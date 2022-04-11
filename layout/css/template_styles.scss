@@ -1,36 +1,32 @@
     @charset "UTF-8";
     @font-face {
         font-family: 'NotoSans';
-        font-weight: 400;
         src: local('NotoSans'), url('/layout/fonts/NotoSans-Regular.woff2') format('woff2'), url('/layout/fonts/NotoSans-Regular.woff') format('woff'), url('/layout/fonts/NotoSans-Regular.ttf') format('ttf'), url('/layout/fonts/NotoSans-Regular.eot') format('eot');
     }
     
     @font-face {
         font-family: 'NotoSans-Medium';
-        font-weight: 500;
         src: local("NotoSans-Medium"), url("/layout/fonts/NotoSans-Medium.woff2") format("woff2"), url("/layout/fonts/NotoSans-Medium.woff") format("woff"), url("/layout/fonts/NotoSans-Medium.ttf") format("ttf"), url("/layout/fonts/NotoSans-Medium.eot") format("eot");
     }
     
     @font-face {
         font-family: 'NotoSans-SemiBold';
-        font-weight: 600;
         src: local("NotoSans-SemiBold"), url("/layout/fonts/NotoSans-SemiBold.woff2") format("woff2"), url("/layout/fonts/NotoSans-SemiBold.woff") format("woff"), url("/layout/fonts/NotoSans-SemiBold.ttf") format("ttf"), url("/layout/fonts/NotoSans-SemiBold.eot") format("eot");
     }
     
     @font-face {
         font-family: 'NotoSans-Bold';
-        font-weight: 700;
         src: local("NotoSans-Bold"), url("/layout/fonts/NotoSans-Bold.woff2") format("woff2"), url("/layout/fonts/NotoSans-Bold.woff") format("woff"), url("/layout/fonts/NotoSans-Bold.ttf") format("ttf"), url("/layout/fonts/NotoSans-Bold.eot") format("eot");
     }
     
     @font-face {
         font-family: 'NotoSans-ExtraBold';
-        font-weight: 800;
         src: local("NotoSans-ExtraBold"), url("/layout/fonts/NotoSans-ExtraBold.woff2") format("woff2"), url("/layout/fonts/NotoSans-ExtraBold.woff") format("woff"), url("/layout/fonts/NotoSans-ExtraBold.ttf") format("ttf"), url("/layout/fonts/NotoSans-ExtraBold.eot") format("eot");
     }
     
     body {
         font-family: 'NotoSans';
+        font-weight: 400;
         font-style: normal;
         font-size: 24px;
         line-height: 160%;
@@ -40,6 +36,7 @@
     
     h1 {
         font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
         font-size: 40px;
         line-height: 180%;
         letter-spacing: 0.02em;
@@ -49,6 +46,7 @@
     h2,
     .h2 {
         font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
         font-size: 36px;
         line-height: 120%;
         padding-bottom: 20px;
@@ -57,6 +55,7 @@
     h3,
     .h3 {
         font-family: 'NotoSans-Bold';
+        font-weight: 700;
         font-style: normal;
         font-size: 30px;
         line-height: 160%;
@@ -112,11 +111,13 @@
         }
         &_text {
             font-family: 'NotoSans-Bold';
+            font-weight: 700;
             font-size: 14px;
             line-height: 110%;
             color: #AAB4B3;
             &>div:first-child {
                 font-family: 'NotoSans-Bold';
+                font-weight: 700;
                 font-size: 20px;
                 color: #000000;
             }
@@ -136,6 +137,7 @@
     .header {
         &-phone {
             font-family: 'NotoSans-Bold';
+            font-weight: 700;
             font-size: 18px;
             line-height: 110%;
             &>a {
@@ -147,11 +149,13 @@
         }
         &-time {
             font-family: 'NotoSans-Bold';
+            font-weight: 700;
             font-size: 18px;
             line-height: 110%;
         }
         &-bottom {
             font-family: 'NotoSans-Bold';
+            font-weight: 700;
             font-size: 18px;
             line-height: 110%;
             padding-left: 14px;
@@ -164,12 +168,14 @@
     
     .callback {
         font-family: 'NotoSans-Bold';
+        font-weight: 700;
         font-size: 18px;
         line-height: 110%;
     }
     
     .come-in {
         font-family: 'NotoSans-Bold';
+        font-weight: 700;
         font-size: 18px;
         line-height: 110%;
         padding-top: 15px;
@@ -188,6 +194,7 @@
     
     .navbar-nav {
         font-family: 'NotoSans-Medium';
+        font-weight: 500;
         font-size: 18px;
         line-height: 110%;
         text-align: center;
@@ -233,6 +240,7 @@
     
     .search {
         font-family: 'NotoSans-Medium';
+        font-weight: 500;
         font-size: 18px;
         line-height: 110%;
         text-align: right;
@@ -262,6 +270,7 @@
         }
         & button {
             font-family: 'NotoSans-SemiBold';
+            font-weight: 600;
             font-size: 20px;
             line-height: 110%;
             color: #FFFFFF;
@@ -276,6 +285,10 @@
     
     footer {
         background: #F2FAFC;
+    }
+    
+    .nav-footer {
+        margin-left: 35px;
     }
     
     .list-in-footer {
@@ -538,6 +551,7 @@
         }
         & .collapse {
             font-family: 'NotoSans-Medium';
+            font-weight: 500;
             font-style: italic;
             font-weight: 500;
             font-size: 20px;
@@ -601,6 +615,7 @@
         }
         & span {
             font-family: 'NotoSans-Bold';
+            font-weight: 700;
             font-style: normal;
             font-weight: 700;
         }
