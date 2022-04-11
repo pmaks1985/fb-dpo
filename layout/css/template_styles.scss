@@ -1,0 +1,659 @@
+    @charset "UTF-8";
+    @font-face {
+        font-family: 'NotoSans';
+        font-weight: 400;
+        src: local('NotoSans'), url('/layout/fonts/NotoSans-Regular.woff2') format('woff2'), url('/layout/fonts/NotoSans-Regular.woff') format('woff'), url('/layout/fonts/NotoSans-Regular.ttf') format('ttf'), url('/layout/fonts/NotoSans-Regular.eot') format('eot');
+    }
+    
+    @font-face {
+        font-family: 'NotoSans-Medium';
+        font-weight: 500;
+        src: local("NotoSans-Medium"), url("/layout/fonts/NotoSans-Medium.woff2") format("woff2"), url("/layout/fonts/NotoSans-Medium.woff") format("woff"), url("/layout/fonts/NotoSans-Medium.ttf") format("ttf"), url("/layout/fonts/NotoSans-Medium.eot") format("eot");
+    }
+    
+    @font-face {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        src: local("NotoSans-SemiBold"), url("/layout/fonts/NotoSans-SemiBold.woff2") format("woff2"), url("/layout/fonts/NotoSans-SemiBold.woff") format("woff"), url("/layout/fonts/NotoSans-SemiBold.ttf") format("ttf"), url("/layout/fonts/NotoSans-SemiBold.eot") format("eot");
+    }
+    
+    @font-face {
+        font-family: 'NotoSans-Bold';
+        font-weight: 600;
+        src: local("NotoSans-Bold"), url("/layout/fonts/NotoSans-Bold.woff2") format("woff2"), url("/layout/fonts/NotoSans-Bold.woff") format("woff"), url("/layout/fonts/NotoSans-Bold.ttf") format("ttf"), url("/layout/fonts/NotoSans-Bold.eot") format("eot");
+    }
+    
+    @font-face {
+        font-family: 'NotoSans-ExtraBold';
+        font-weight: 800;
+        src: local("NotoSans-ExtraBold"), url("/layout/fonts/NotoSans-ExtraBold.woff2") format("woff2"), url("/layout/fonts/NotoSans-ExtraBold.woff") format("woff"), url("/layout/fonts/NotoSans-ExtraBold.ttf") format("ttf"), url("/layout/fonts/NotoSans-ExtraBold.eot") format("eot");
+    }
+    
+    body {
+        font-family: 'NotoSans-Medium';
+        font-style: normal;
+        font-size: 24px;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+    
+    h1 {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 180%;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+    
+    h2,
+    .h2 {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        padding-bottom: 20px;
+    }
+    
+    h3,
+    .h3 {
+        font-family: 'NotoSans-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 160%;
+    }
+    
+    a {
+        color: #61C8C1;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: #31A099;
+    }
+    
+    .text-light-green {
+        color: #61C8C1;
+    }
+    
+    .text-gray {
+        color: #AAB4B3;
+    }
+    
+    .text-black {
+        color: #000000;
+    }
+    
+    a.text-black:hover {
+        color: #AAB4B3;
+    }
+    
+    .text-underline {
+        text-decoration-line: underline;
+    }
+    
+    .bg-light-green {
+        background: #F2FAFC;
+        box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+    }
+    /*header*/
+    
+    .logo {
+        &_img {
+            background-image: url(/layout/img/logo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 60px;
+            min-width: 50px;
+            margin-right: 11px;
+        }
+        &_text {
+            font-family: 'NotoSans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 110%;
+            color: #AAB4B3;
+            &>div:first-child {
+                font-family: 'NotoSans-ExtraBold';
+                font-weight: 800;
+                font-size: 20px;
+                color: #000000;
+            }
+        }
+    }
+    
+    .select-region {
+        font-family: 'NotoSans-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+        color: #000000;
+    }
+    
+    .fa-chevron-down {
+        font-size: 10px;
+    }
+    
+    .header {
+        &-phone {
+            font-family: 'NotoSans-SemiBold';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 110%;
+            &>a {
+                color: #000000;
+            }
+            &>a:hover {
+                color: #AAB4B3;
+            }
+        }
+        &-time {
+            font-family: 'NotoSans-SemiBold';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 110%;
+        }
+        &-bottom {
+            font-family: 'NotoSans-SemiBold';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 110%;
+            padding-left: 14px;
+            padding-top: 25px;
+            &>div:first-child {
+                padding-right: 50px;
+            }
+        }
+    }
+    
+    .callback {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 110%;
+    }
+    
+    .come-in {
+        font-family: 'NotoSans-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 110%;
+        padding-top: 15px;
+        &>a {
+            color: #AAB4B3;
+            &:hover {
+                color: #000000;
+            }
+            &::after {
+                content: url(/layout/img/exit.png);
+                padding-left: 10px;
+            }
+        }
+    }
+    /*menu*/
+    
+    .navbar-nav {
+        font-family: 'NotoSans-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .nav-item>a {
+        color: #000000;
+    }
+    
+    .dropdown {
+        &-toggle::after {
+            display: none;
+        }
+        &-menu {
+            background: #F2FAFC;
+            box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+            padding: 22px 0;
+            &>.dropdown-item {
+                line-height: 200%;
+                letter-spacing: 0.02em;
+                text-decoration-line: underline;
+                color: #000000;
+                padding: 0 19px;
+                & .fa-circle {
+                    font-size: 5px;
+                    padding-right: 8px;
+                    margin-bottom: -8px;
+                }
+                &:hover {
+                    color: #16181b;
+                    text-decoration: none;
+                    text-decoration-line: none;
+                    background: #F2FAFC;
+                }
+            }
+        }
+    }
+    
+    #navbarSupportedContent .navbar-nav .active {
+        border-bottom: 5px solid #61C8C1;
+    }
+    
+    .search {
+        font-family: 'NotoSans-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+        text-align: right;
+        &>a:hover {
+            color: #AAB4B3;
+        }
+        &>i {
+            font-size: 28px;
+        }
+    }
+    
+    .nav-search {
+        right: 0;
+        & input {
+            font-size: 18px;
+            background: #FFFFFF;
+            border: 2px solid #9BA8A7;
+            box-sizing: border-box;
+            padding-bottom: 4.1px;
+            padding-left: 30px;
+            width: 0;
+            &:focus {
+                transition: all 1s;
+                width: 18vw !important;
+            }
+        }
+        & button {
+            font-family: 'NotoSans-SemiBold';
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 110%;
+            color: #FFFFFF;
+            background: #9BA8A7;
+            padding: 13px 37px;
+            &:hover {
+                background-color: #16181b;
+            }
+        }
+    }
+    /*footer*/
+    
+    footer {
+        background: #F2FAFC;
+    }
+    
+    .list-in-footer {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 18px;
+        color: #61C8C1;
+    }
+    
+    .nord-soft {
+        font-size: 18px;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+        &_logo a,
+        &_logo:hover {
+            color: #000000;
+        }
+    }
+    /*content*/
+    
+    .general {
+        padding: 80px 0;
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        &-img {
+            min-height: 615px;
+            max-width: 1600px;
+            background-image: url(/layout/img/general.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &-title {
+            font-size: 40px;
+            line-height: 180%;
+            letter-spacing: 0.02em;
+            padding-bottom: 25px;
+            max-width: 1030px;
+        }
+        &-description {
+            font-size: 32px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+        }
+        &-link {
+            font-size: 30px;
+            line-height: 120%;
+            &>a {
+                padding: 20px 115px;
+                background: #61C8C1;
+                box-shadow: 0px 4px 4px rgba(125, 169, 166, 0.6);
+                &:hover {
+                    background: #31A099;
+                    box-shadow: 0px 4px 4px rgba(125, 169, 166, 0.6);
+                }
+                &:first-child {
+                    margin-right: 70px;
+                }
+            }
+        }
+        &>div:first-child {
+            padding-bottom: 9vw;
+        }
+    }
+    
+    .educational-center {
+        padding-bottom: 105px;
+        &_title {
+            font-family: 'NotoSans-SemiBold';
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+        }
+        &_link {
+            font-family: 'NotoSans-Medium';
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            &>a {
+                padding: 10px 40px;
+                color: #000000;
+                background: #F2FAFC;
+                box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+                &:hover {
+                    color: #AAB4B3 !important;
+                }
+            }
+        }
+    }
+    
+    .directions-of-study {
+        padding-bottom: 70px;
+        &_link {
+            font-family: 'NotoSans-Medium';
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 150%;
+            & a {
+                color: #000000;
+                &:hover {
+                    color: #AAB4B3
+                }
+            }
+            &>div {
+                padding: 15px 120px;
+                margin-bottom: 40px;
+                background: #F2FAFC;
+                box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+            }
+        }
+    }
+    
+    .offer-calculator {
+        padding-bottom: 100px;
+        &_calc {
+            background-image: url(/layout/img/calc.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            min-width: 90px;
+        }
+        &_letter {
+            background-image: url(/layout/img/letter.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            min-width: 120px;
+        }
+    }
+    
+    .steps {
+        padding-bottom: 90px;
+    }
+    
+    .step {
+        &_text {
+            font-family: 'NotoSans-Medium';
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+        }
+    }
+    
+    .application-for-training {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        padding: 35px 80px;
+        background: #61C8C1;
+        box-shadow: 0px 4px 4px rgba(125, 169, 166, 0.6);
+        min-width: 630px;
+        margin-bottom: 100px;
+        &:hover {
+            background: #31A099;
+        }
+    }
+    
+    .payment {
+        padding-bottom: 100px;
+        &>div {
+            padding: 30px 85px;
+            background: #F2FAFC;
+            box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+        }
+        &_title {
+            font-family: 'NotoSans-SemiBold';
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 150%;
+            color: #61C8C1;
+        }
+    }
+    
+    .calc-delivery {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+        background: #F2FAFC;
+        box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+        padding: 20px 0;
+        margin-bottom: 100px;
+        &>img {
+            max-width: 70px;
+        }
+    }
+    
+    .advantages {
+        line-height: 120%;
+        margin-bottom: 100px;
+        &_text {
+            font-size: 24px;
+        }
+        &1 {
+            background-image: url(/layout/img/advantages1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 60px;
+        }
+        &2 {
+            background-image: url(/layout/img/advantages2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 65px;
+            min-height: 50px;
+        }
+        &3 {
+            background-image: url(/layout/img/advantages3.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 60px;
+        }
+        &4 {
+            background-image: url(/layout/img/advantages4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 60px;
+        }
+        &5 {
+            background-image: url(/layout/img/advantages5.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 60px;
+        }
+        &6 {
+            background-image: url(/layout/img/advantages6.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 60px;
+        }
+        &7 {
+            background-image: url(/layout/img/advantages7.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 60px;
+        }
+        &8 {
+            background-image: url(/layout/img/advantages8.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 60px;
+        }
+        & .d-flex {
+            min-height: 134px;
+        }
+    }
+    
+    .accordion {
+        & button {
+            font-family: 'NotoSans-Medium';
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            background: #F2FAFC;
+            box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+            padding: 25px;
+        }
+        & .collapse {
+            font-family: 'NotoSans-Medium';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            background: #F2FAFC;
+            box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+            padding: 25px;
+        }
+        & .collapsing {
+            transition: 0.1ms;
+        }
+    }
+    
+    .answers {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 160%;
+    }
+    
+    .any-questions {
+        padding-top: 100px;
+        max-width: 35%;
+        &_title {
+            font-family: 'NotoSans-SemiBold';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 120%;
+        }
+        &>div {
+            padding-bottom: 45px;
+        }
+    }
+    
+    .payment-methods {
+        padding-bottom: 100px;
+        &_card {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 150%;
+            color: #61C8C1;
+        }
+        &>div {
+            padding: 30px 85px;
+            background: #F2FAFC;
+            box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+        }
+    }
+    
+    .card-payment {
+        font-size: 30px;
+        &>div {
+            padding: 30px;
+            background: #F2FAFC;
+            box-shadow: 1px 1px 5px rgba(125, 169, 166, 0.5);
+        }
+        &>i {
+            font-size: 24px;
+        }
+        & span {
+            font-family: 'NotoSans-Bold';
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+    
+    .voz {
+        padding: 105px 0;
+        &_img {
+            background-image: url(/layout/img/voz.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 420px;
+            min-height: 470px;
+        }
+    }
+    
+    .attention {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        &>span {
+            font-size: 30px;
+        }
+    }
+    
+    .yandex-checkout {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        padding-bottom: 100px;
+    }
+    
+    .cashless-payment {
+        padding-bottom: 170px;
+        & span {
+            font-family: 'NotoSans-ExtraBold';
+            font-weight: 800;
+        }
+    }
