@@ -35,12 +35,13 @@
     }
     
     h1 {
-        font-family: 'NotoSans-SemiBold';
-        font-weight: 600;
+        font-family: 'NotoSans-Bold';
+        font-weight: 700;
         font-size: 40px;
         line-height: 180%;
         letter-spacing: 0.02em;
         color: #000000;
+        padding-bottom: 10px;
     }
     
     h2,
@@ -611,12 +612,11 @@
         }
     }
     
-    .fill-the-form {}
-    
     .payment-methods {
         padding-bottom: 100px;
         &_card {
-            font-weight: 600;
+            font-family: 'NotoSans-Bold';
+            font-weight: 700;
             font-size: 30px;
             line-height: 150%;
             color: #61C8C1;
@@ -631,6 +631,8 @@
     .card-payment {
         font-size: 30px;
         &>div {
+            font-family: 'NotoSans-Medium';
+            font-weight: 500;
             padding: 30px;
             background: #F2FAFC;
             box-shadow: 1px 1px 5px rgba(125, 169, 166, 0.5);
@@ -640,8 +642,6 @@
         }
         & span {
             font-family: 'NotoSans-Bold';
-            font-weight: 700;
-            font-style: normal;
             font-weight: 700;
         }
     }
@@ -658,11 +658,9 @@
     }
     
     .attention {
-        font-family: 'NotoSans-SemiBold';
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 150%;
         &>span {
+            font-family: 'NotoSans-Bold';
+            font-weight: 700;
             font-size: 30px;
         }
     }

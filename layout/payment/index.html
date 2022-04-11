@@ -13,20 +13,20 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-xl">
             <div class="row pt-5">
                 <div class="col-3 p-0">
                     <a href="/">
                         <div class="logo d-flex">
                             <div class="logo_img"></div>
                             <div class="logo_text">
-                                <div class="pt-1 pb-2">Фактор Безопасности</div>
+                                <div class="pt-3 pb-2">Фактор Безопасности</div>
                                 <div>Учебный центр</div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-6 p-0">
+                <div class="col-6 p-0 mt-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="select-region d-flex align-items-center">
                             <i class="fa fa-chevron-down text-light-green pr-1" aria-hidden="true"></i>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 p-0 text-right">
+                <div class="col-3 p-0 mt-3 text-right">
                     <div class="callback"><a href="#">Заказать обратный звонок</a></div>
                     <div class="come-in d-flex justify-content-end">
                         <a href="#" class="d-flex align-items-center">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </header>
-    <div class="container p-0">
+    <div class="container-xl p-0 pb-5">
         <nav class="navbar navbar-expand-lg p-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
           <span class="navbar-toggler-icon"></span>
@@ -161,7 +161,7 @@
     </div>
 
     <div class="content">
-      <div class="container px-0 pt-4">
+      <div class="container-xl px-0 pt-4">
         <h1>Оплата обучения</h1>
         <h2>Доступные способы оплаты</h2>
         <div class="d-flex justify-content-between payment-methods">
@@ -202,7 +202,8 @@
                 </div>
                 <div class="attention bg-light-green p-4 mb-4">
                     <span class="text-light-green">Внимание!</span> Оплата договора (счета) производится через сервис
-                    <span class="text-light-green">Яндекс.Касса</span>. К оплате принимаются банковские карты платежных систем Visa, MasterCard, Maestro, МИР.
+                    <span class="text-light-green">Яндекс.Касса</span>. К оплате принимаются банковские карты платежных систем
+                    <span class="font-weight-bold">Visa, MasterCard, Maestro, МИР.</span>
                 </div>
                 <div class="yandex-checkout row">
                     <div class="col-7 pt-3 pr-2 pl-3">
@@ -249,20 +250,20 @@
     </div>
 
     <footer>
-      <div class="container">
-        <div class="row pt-5">
+      <div class="container-xl">
+        <div class="row pt-5 pb-2">
           <div class="col-3 p-0">
             <a href="/">
               <div class="logo d-flex">
                 <div class="logo_img"></div>
                 <div class="logo_text">
-                  <div class="pt-1 pb-2">Фактор Безопасности</div>
+                  <div class="pt-3 pb-2">Фактор Безопасности</div>
                   <div>Учебный центр</div>
                 </div>
               </div>
             </a>
                     </div>
-                    <div class="col-4 p-0">
+                    <div class="col-4 mt-3 p-0">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="header-phone">
                                 <a href="tel:+74932409454">+7 (4932) 40-94-54</a>
@@ -271,13 +272,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-0">
+                <div class="nav-footer">
                     <nav class="navbar navbar-expand-lg p-0">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFooter" aria-controls="navbarFooter" aria-expanded="false" aria-label="Переключатель навигации">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-                        <div class="collapse navbar-collapse justify-content-between d-flex" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse justify-content-between d-flex" id="navbarFooter">
                             <ul class="navbar-nav justify-content-between col-10">
                                 <li class="nav-item dropdown d-flex align-items-center">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -366,7 +367,7 @@
                             </div>
                     </nav>
                     </div>
-                    <div class="list-in-footer pt-5">
+                    <div class="list-in-footer pt-4">
                         <ul class="pl-1">
                             <li>
                                 <a href="http://">Лицензия на ведение образовательной деятельности №2051 от
@@ -406,11 +407,13 @@
                             $(".magic-link").click(function() {
                                 $(".nav-search").toggleClass("d-flex").toggleClass("d-none");
                                 $(".magic-input").focus();
+                                $(".search").toggleClass("d-flex").toggleClass("d-none");
                             });
                             $(document).mouseup(function(e) {
                                 var container = $(".nav-search");
                                 if (container.has(e.target).length === 0) {
                                     container.addClass("d-none").removeClass("d-flex");
+                                    $(".search").addClass("d-flex").removeClass("d-none");
                                 }
                             });
                         });

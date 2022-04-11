@@ -34,12 +34,13 @@ body {
 }
 
 h1 {
-  font-family: 'NotoSans-SemiBold';
-  font-weight: 600;
+  font-family: 'NotoSans-Bold';
+  font-weight: 700;
   font-size: 40px;
   line-height: 180%;
   letter-spacing: 0.02em;
   color: #000000;
+  padding-bottom: 10px;
 }
 
 h2,
@@ -680,7 +681,8 @@ footer {
 }
 
 .payment-methods_card {
-  font-weight: 600;
+  font-family: 'NotoSans-Bold';
+  font-weight: 700;
   font-size: 30px;
   line-height: 150%;
   color: #61C8C1;
@@ -698,6 +700,8 @@ footer {
 }
 
 .card-payment > div {
+  font-family: 'NotoSans-Medium';
+  font-weight: 500;
   padding: 30px;
   background: #F2FAFC;
   -webkit-box-shadow: 1px 1px 5px rgba(125, 169, 166, 0.5);
@@ -710,8 +714,6 @@ footer {
 
 .card-payment span {
   font-family: 'NotoSans-Bold';
-  font-weight: 700;
-  font-style: normal;
   font-weight: 700;
 }
 
@@ -727,14 +729,9 @@ footer {
   min-height: 470px;
 }
 
-.attention {
-  font-family: 'NotoSans-SemiBold';
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 150%;
-}
-
 .attention > span {
+  font-family: 'NotoSans-Bold';
+  font-weight: 700;
   font-size: 30px;
 }
 
