@@ -220,7 +220,7 @@ a.text-black:hover {
   background: #F2FAFC;
   -webkit-box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
           box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
-  padding: 22px 0;
+  padding: 20px 0 18px;
 }
 
 .dropdown-menu > .dropdown-item {
@@ -313,7 +313,7 @@ footer {
 
 .list-in-footer {
   font-family: 'NotoSans-SemiBold';
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   color: #61C8C1;
 }
