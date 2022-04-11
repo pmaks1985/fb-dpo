@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-xl">
             <div class="row pt-5">
                 <div class="col-3 p-0">
                     <a href="/">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </header>
-    <div class="container p-0 pb-5">
+    <div class="container-xl p-0 pb-5">
         <nav class="navbar navbar-expand-lg p-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
           <span class="navbar-toggler-icon"></span>
@@ -162,7 +162,7 @@
 
     <div class="content">
       <div class="general-img mx-auto">
-        <div class="container px-0">
+        <div class="container-xl px-0">
           <div class="general d-flex flex-column justify-content-between">
             <div>
               <div class="general-title">
@@ -180,7 +180,7 @@
                 </div>
                 </div>
                 </div>
-                <div class="container px-0">
+                <div class="container-xl px-0">
                     <div class="educational-center pt-5">
                         <div class="educational-center_title pb-5">
                             Учебный центр "Фактор Безопасности" проводит обучение на основании образовательной лицензии Министерства образования и аккредитации Минтруда РФ
@@ -413,7 +413,7 @@
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container-xl">
             <div class="row pt-5">
                 <div class="col-3 p-0">
                     <a href="/">
@@ -570,11 +570,13 @@
             $(".magic-link").click(function() {
                 $(".nav-search").toggleClass("d-flex").toggleClass("d-none");
                 $(".magic-input").focus();
+                $(".search").toggleClass("d-flex").toggleClass("d-none");
             });
             $(document).mouseup(function(e) {
                 var container = $(".nav-search");
                 if (container.has(e.target).length === 0) {
                     container.addClass("d-none").removeClass("d-flex");
+                    $(".search").addClass("d-flex").removeClass("d-none");
                 }
             });
         });
