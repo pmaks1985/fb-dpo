@@ -106,7 +106,7 @@
             background-image: url(/layout/img/logo.png);
             background-size: cover;
             background-repeat: no-repeat;
-            min-height: 60px;
+            min-height: 62px;
             min-width: 50px;
             margin-right: 11px;
         }
@@ -188,8 +188,6 @@
     
     .navbar-nav {
         font-family: 'NotoSans-Medium';
-        font-style: normal;
-        font-weight: 500;
         font-size: 18px;
         line-height: 110%;
         text-align: center;
@@ -235,8 +233,6 @@
     
     .search {
         font-family: 'NotoSans-Medium';
-        font-style: normal;
-        font-weight: 500;
         font-size: 18px;
         line-height: 110%;
         text-align: right;
@@ -266,7 +262,6 @@
         }
         & button {
             font-family: 'NotoSans-SemiBold';
-            font-weight: 600;
             font-size: 20px;
             line-height: 110%;
             color: #FFFFFF;

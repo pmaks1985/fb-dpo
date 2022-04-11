@@ -106,7 +106,7 @@ a.text-black:hover {
   background-image: url(/layout/img/logo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 60px;
+  min-height: 62px;
   min-width: 50px;
   margin-right: 11px;
 }
@@ -195,8 +195,6 @@ a.text-black:hover {
 /*menu*/
 .navbar-nav {
   font-family: 'NotoSans-Medium';
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   line-height: 110%;
   text-align: center;
@@ -247,8 +245,6 @@ a.text-black:hover {
 
 .search {
   font-family: 'NotoSans-Medium';
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   line-height: 110%;
   text-align: right;
@@ -286,7 +282,6 @@ a.text-black:hover {
 
 .nav-search button {
   font-family: 'NotoSans-SemiBold';
-  font-weight: 600;
   font-size: 20px;
   line-height: 110%;
   color: #FFFFFF;
