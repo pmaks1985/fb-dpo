@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'NotoSans';
   src: local("NotoSans"), url("/layout/fonts/NotoSans-Regular.woff2") format("woff2"), url("/layout/fonts/NotoSans-Regular.woff") format("woff"), url("/layout/fonts/NotoSans-Regular.ttf") format("ttf"), url("/layout/fonts/NotoSans-Regular.eot") format("eot");
@@ -773,4 +774,48 @@ footer {
 .cashless-payment span {
   font-family: 'NotoSans-ExtraBold';
   font-weight: 800;
+}
+
+/*delivery*/
+.copies {
+  font-family: 'NotoSans-Bold';
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 105px;
+}
+
+.deliveryСard {
+  padding: 30px 30px 30px 60px;
+  background: #F2FAFC;
+  -webkit-box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+          box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
+  margin-bottom: 45px;
+}
+
+.deliveryСard_title {
+  font-family: 'NotoSans-Bold';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #61C8C1;
+  padding-bottom: 20px;
+}
+
+.deliveryСard_imgPost {
+  background-image: url(/layout/img/post.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 280px;
+  min-height: 140px;
+  margin-right: 30px;
+}
+
+.deliveryСard_imgExpress {
+  background-image: url(/layout/img/express.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 280px;
+  min-height: 140px;
+  margin-right: 30px;
 }
