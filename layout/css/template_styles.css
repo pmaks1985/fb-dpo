@@ -38,9 +38,8 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 180%;
-  letter-spacing: 0.02em;
-  color: #000000;
-  padding-bottom: 10px;
+  letter-spacing: 0.03em;
+  padding-bottom: 45px;
 }
 
 h2,
@@ -48,7 +47,7 @@ h2,
   font-family: 'NotoSans-Bold';
   font-weight: 700;
   font-size: 36px;
-  line-height: 120%;
+  line-height: 180%;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
 }
@@ -57,9 +56,9 @@ h3,
 .h3 {
   font-family: 'NotoSans-Bold';
   font-weight: 700;
-  font-style: normal;
-  font-size: 30px;
-  line-height: 160%;
+  font-size: 32px;
+  line-height: 120%;
+  padding-bottom: 45px;
 }
 
 a {
@@ -688,6 +687,7 @@ footer {
   font-size: 36px;
 }
 
+/*payment*/
 .payment-methods {
   padding-bottom: 100px;
 }
@@ -698,9 +698,18 @@ footer {
   font-size: 30px;
   line-height: 150%;
   color: #61C8C1;
+  padding-bottom: 15px;
 }
 
-.payment-methods > div {
+.payment-methods_card:hover {
+  color: #31A099;
+}
+
+.payment-methods > a {
+  color: #000000;
+}
+
+.payment-methods > a > .text-center {
   padding: 30px 85px;
   background: #F2FAFC;
   -webkit-box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
@@ -714,6 +723,8 @@ footer {
 .card-payment > div {
   font-family: 'NotoSans-Medium';
   font-weight: 500;
+  font-size: 30px;
+  line-height: 160%;
   padding: 30px;
   background: #F2FAFC;
   -webkit-box-shadow: 1px 1px 5px rgba(125, 169, 166, 0.5);
@@ -744,12 +755,12 @@ footer {
 .attention > span {
   font-family: 'NotoSans-Bold';
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .yandex-checkout {
-  font-family: 'NotoSans-SemiBold';
-  font-weight: 600;
+  font-family: 'NotoSans-Bold';
+  font-weight: 700;
   font-size: 18px;
   line-height: 150%;
   padding-bottom: 100px;
