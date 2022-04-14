@@ -112,6 +112,13 @@
     }
     /*header*/
     
+    .sticky {
+        position: sticky;
+        top: 0;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+    
     .logo {
         &_img {
             background-image: url(/layout/img/logo.png);
@@ -213,8 +220,14 @@
         color: #000000;
     }
     
-    .nav-item>a {
-        color: #000000;
+    .nav-item {
+        &>a {
+            color: #000000;
+        }
+        border-bottom: 5px solid transparent;
+        &:hover {
+            border-bottom: 5px solid #61C8C1;
+        }
     }
     
     .dropdown {
@@ -228,7 +241,6 @@
             &>.dropdown-item {
                 line-height: 200%;
                 letter-spacing: 0.02em;
-                text-decoration-line: underline;
                 color: #000000;
                 padding: 0 19px;
                 & .fa-circle {
@@ -238,9 +250,8 @@
                 }
                 &:hover {
                     color: #16181b;
-                    text-decoration: none;
-                    text-decoration-line: none;
                     background: #F2FAFC;
+                    text-decoration: underline;
                 }
             }
         }

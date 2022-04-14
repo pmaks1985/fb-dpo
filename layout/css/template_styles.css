@@ -113,6 +113,14 @@ a.text-black:hover {
 }
 
 /*header*/
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
 .logo_img {
   background-image: url(/layout/img/logo.png);
   background-size: cover;
@@ -220,8 +228,16 @@ a.text-black:hover {
   color: #000000;
 }
 
+.nav-item {
+  border-bottom: 5px solid transparent;
+}
+
 .nav-item > a {
   color: #000000;
+}
+
+.nav-item:hover {
+  border-bottom: 5px solid #61C8C1;
 }
 
 .dropdown-toggle::after {
@@ -238,8 +254,6 @@ a.text-black:hover {
 .dropdown-menu > .dropdown-item {
   line-height: 200%;
   letter-spacing: 0.02em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   color: #000000;
   padding: 0 19px;
 }
@@ -252,10 +266,8 @@ a.text-black:hover {
 
 .dropdown-menu > .dropdown-item:hover {
   color: #16181b;
-  text-decoration: none;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
   background: #F2FAFC;
+  text-decoration: underline;
 }
 
 #navbarSupportedContent .navbar-nav .active {
