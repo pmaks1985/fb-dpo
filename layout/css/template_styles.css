@@ -753,6 +753,10 @@ footer {
   min-height: 470px;
 }
 
+.attention {
+  margin-bottom: 75px;
+}
+
 .attention > span {
   font-family: 'NotoSans-Bold';
   font-weight: 700;
@@ -776,6 +780,10 @@ footer {
   font-weight: 800;
 }
 
+.cashless-payment_marg {
+  margin-bottom: 45px;
+}
+
 /*delivery*/
 .copies {
   font-family: 'NotoSans-Bold';
@@ -784,8 +792,12 @@ footer {
   padding-bottom: 105px;
 }
 
+.delivery {
+  padding-bottom: 105px;
+}
+
 .deliveryСard {
-  padding: 30px 30px 30px 60px;
+  padding: 30px 35px 30px 60px;
   background: #F2FAFC;
   -webkit-box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
           box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
