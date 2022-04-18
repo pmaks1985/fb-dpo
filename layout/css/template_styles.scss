@@ -793,3 +793,15 @@
         font-size: 20px;
         padding-bottom: 170px;
     }
+    /*areas-of-study*/
+    
+    .bread-crumbs {
+        font-family: 'NotoSans-Medium';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+        color: #AAB4B3;
+        &>.text-gray:hover {
+            color: #000000;
+        }
+    }
