@@ -37,10 +37,11 @@ body {
 h1 {
   font-family: 'NotoSans-Bold';
   font-weight: 700;
-  font-size: 40px;
-  line-height: 180%;
+  font-size: 36px;
+  line-height: 120%;
   letter-spacing: 0.03em;
   padding-bottom: 45px;
+  color: #000000;
 }
 
 h2,
@@ -110,6 +111,10 @@ a.text-black:hover {
 .font-weight-medium {
   font-family: 'NotoSans-Medium';
   font-weight: 500;
+}
+
+.w-80 {
+  width: 80%;
 }
 
 /*header*/
@@ -889,6 +894,7 @@ footer {
   font-size: 18px;
   line-height: 110%;
   color: #AAB4B3;
+  padding-bottom: 22px;
 }
 
 .bread-crumbs > .text-gray:hover {
