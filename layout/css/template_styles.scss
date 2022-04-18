@@ -475,7 +475,7 @@
     
     .payment {
         padding-bottom: 100px;
-        &>div {
+        & .text-center {
             padding: 30px 85px;
             background: #F2FAFC;
             box-shadow: 1px 1px 10px 2px rgba(125, 169, 166, 0.25);
@@ -746,4 +746,50 @@
                 margin-right: 30px;
             }
         }
+    }
+    
+    .shippingTable {
+        padding-bottom: 45px;
+        &_head {
+            font-family: 'NotoSans-Bold';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 110%;
+            letter-spacing: 0.01em;
+            color: #AAB4B3;
+            background: #F2FAFC;
+            padding: 13px 0 13px;
+            &>.d-flex>div {
+                padding-right: 20px;
+                &:first-child {
+                    min-width: 170px;
+                }
+            }
+        }
+        &_body {
+            font-size: 20px;
+            background-color: #f2fafc;
+            &>.d-flex {
+                &:nth-child(6n+1),
+                &:nth-child(6n+2),
+                &:nth-child(6n+3) {
+                    background-color: #FFFFFF;
+                }
+                &>div {
+                    padding: 20px 0;
+                    &:first-child {
+                        overflow-wrap: break-word;
+                        width: 170px;
+                    }
+                    &:nth-child(2) {
+                        min-width: 145px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .explanation {
+        font-size: 20px;
+        padding-bottom: 170px;
     }
