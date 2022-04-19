@@ -890,3 +890,14 @@
             margin-right: 40px;
         }
     }
+    
+    .table {
+        font-size: 20px;
+        & thead {
+            font-family: 'NotoSans-Bold';
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+            color: #AAB4B3;
+        }
+    }
