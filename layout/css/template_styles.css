@@ -50,7 +50,7 @@ h2,
   font-family: 'NotoSans-Bold';
   font-weight: 700;
   font-size: 36px;
-  line-height: 180%;
+  line-height: 120%;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
 }
@@ -116,6 +116,16 @@ a.text-black:hover {
 
 .w-80 {
   width: 80%;
+}
+
+.mb-6 {
+  margin-bottom: 100px;
+}
+
+strong,
+b {
+  font-family: 'NotoSans-SemiBold';
+  font-weight: 600;
 }
 
 /*header*/
@@ -987,12 +997,39 @@ footer {
 
 .table {
   font-size: 20px;
+  line-height: 110%;
 }
 
 .table thead {
   font-family: 'NotoSans-Bold';
   font-style: normal;
   font-weight: 700;
-  line-height: 110%;
   color: #AAB4B3;
+  background-color: #F2FAFC;
+}
+
+.table thead th {
+  padding: 25px;
+}
+
+.table thead th:first-child {
+  width: 20%;
+}
+
+.table thead th:nth-child(2) {
+  width: 40%;
+}
+
+.table tbody tr:nth-child(2n+2) {
+  background-color: #F2FAFC;
+}
+
+.table tbody td {
+  padding: 25px 0 25px 25px;
+}
+
+.table tbody td a {
+  font-family: 'NotoSans-Bold';
+  font-style: normal;
+  font-weight: 700;
 }
