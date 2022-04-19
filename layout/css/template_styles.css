@@ -501,9 +501,15 @@ footer {
   padding-bottom: 90px;
 }
 
+.steps img {
+  max-height: 79px;
+  max-width: 72px;
+}
+
 .step_text {
   font-size: 24px;
   line-height: 120%;
+  max-width: 550px;
 }
 
 .application-for-training {
