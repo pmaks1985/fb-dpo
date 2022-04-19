@@ -42,6 +42,7 @@
         letter-spacing: 0.03em;
         padding-bottom: 45px;
         color: #000000;
+        max-width: 1030px;
     }
     
     h2,
@@ -809,5 +810,78 @@
         padding-bottom: 22px;
         &>.text-gray:hover {
             color: #000000;
+        }
+    }
+    
+    .cost-of-education {
+        font-size: 32px;
+        &_block {
+            min-height: 220px;
+        }
+    }
+    
+    .price {
+        font-size: 40px;
+    }
+    
+    .areas-of-study {
+        &_calc {
+            min-height: 58px;
+            min-width: 50px;
+        }
+        &_letter {
+            min-height: 48px;
+            min-width: 40px;
+        }
+        &_submit {
+            & .application-for-training {
+                margin-bottom: 0;
+                min-width: 0;
+                padding: 35px 145px;
+            }
+        }
+    }
+    
+    #dropdownMenuLink {
+        font-family: 'NotoSans-Medium';
+        font-size: 20px;
+        border-bottom: 5px solid #61C8C1;
+        &+i {
+            font-size: 20px;
+        }
+    }
+    
+    .special-prices {
+        white-space: normal;
+        & span {
+            font-size: 24px;
+            line-height: 180%;
+        }
+        &_menu {
+            max-width: 450px;
+        }
+    }
+    
+    .delivery-payment {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 160%;
+        padding: 25px 120px;
+        margin: 60px 0 105px;
+        &_img1 {
+            background-image: url(/layout/img/truck.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 74px;
+            min-height: 58px;
+            margin-right: 40px;
+        }
+        &_img2 {
+            background-image: url(/layout/img/purse.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-width: 65px;
+            min-height: 64px;
+            margin-right: 40px;
         }
     }
