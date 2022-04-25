@@ -37,12 +37,11 @@
     h1 {
         font-family: 'NotoSans-Bold';
         font-weight: 700;
-        font-size: 36px;
+        font-size: 40px;
         line-height: 120%;
         letter-spacing: 0.03em;
         padding-bottom: 45px;
         color: #000000;
-        max-width: 1030px;
     }
     
     h2,
@@ -932,5 +931,52 @@
                     font-weight: 700;
                 }
             }
+        }
+    }
+    /*contacts*/
+    
+    .contacts {
+        font-family: 'NotoSans-SemiBold';
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+        padding-bottom: 50px;
+        &_name {
+            font-family: 'NotoSans-Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            color: #61C8C1;
+            margin-right: 30px;
+            line-height: 80%;
+            margin-left: 40px;
+            & img {
+                top: -20px;
+                left: 0;
+            }
+        }
+        &-map {
+            margin-bottom: 70px;
+        }
+        &-phone {
+            & img {
+                left: -45px;
+            }
+        }
+    }
+    
+    .requisites {
+        font-family: 'NotoSans-SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 120%;
+        &>div {
+            display: flex;
+            margin-bottom: 40px;
+        }
+        & .contacts_name {
+            margin-left: 0;
         }
     }
