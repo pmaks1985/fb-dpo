@@ -1085,3 +1085,65 @@ footer {
 .requisites .contacts_name {
   margin-left: 0;
 }
+
+/*bonus-program*/
+#description h2 {
+  color: #AAB4B3;
+}
+
+.collapseBonusProgram {
+  border-bottom: 3px solid #61C8C1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 50px;
+  font-family: 'NotoSans-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.collapseBonusProgram a {
+  color: #929F9F;
+}
+
+.collapseBonusProgram a[aria-expanded="true"] {
+  color: #FFFFFF;
+}
+
+.collapseBonusProgram > div {
+  border: 3px solid #929F9F;
+  border-bottom: 0px solid #6D7383;
+  -webkit-transform: skew(25deg, 0deg);
+          transform: skew(25deg, 0deg);
+  border-right: 0px solid #6D7383;
+  background-color: white;
+}
+
+.collapseBonusProgram > div:first-child {
+  -webkit-transform: skew(0deg, 0deg);
+          transform: skew(0deg, 0deg);
+  border-right: 0px solid #6D7383;
+  padding-right: 20px;
+}
+
+.collapseBonusProgram > div:first-child > a > div {
+  -webkit-transform: skew(0deg, 0deg);
+          transform: skew(0deg, 0deg);
+}
+
+.collapseBonusProgram > div:nth-child(2) {
+  margin-left: -20px;
+}
+
+.collapseBonusProgram > div:last-child {
+  border-right: 3px solid #6D7383;
+}
+
+.collapseBonusProgram > div > a > div {
+  -webkit-transform: skew(-25deg, 0deg);
+          transform: skew(-25deg, 0deg);
+  padding: 20px;
+}
