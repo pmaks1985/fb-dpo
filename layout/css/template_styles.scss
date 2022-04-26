@@ -989,7 +989,7 @@
     }
     
     .collapseBonusProgram {
-        border-bottom: 3px solid #61C8C1;
+        border-bottom: 5px solid #61C8C1;
         box-sizing: border-box;
         margin-bottom: 50px;
         font-family: 'NotoSans-Bold';
@@ -999,23 +999,33 @@
         line-height: 120%;
         text-align: center;
         letter-spacing: 0.02em;
-        & a {
-            color: #929F9F;
-            &[aria-expanded="true"] {
-                color: #FFFFFF;
-            }
-        }
-        &>div {
+        & button {
             border: 3px solid #929F9F;
             border-bottom: 0px solid #6D7383;
             transform: skew(25deg, 0deg);
             border-right: 0px solid #6D7383;
             background-color: white;
+            color: #929F9F;
+            padding: 15px 20px;
+            &>div {
+                transform: skew(-25deg, 0deg);
+            }
+            &[aria-expanded="true"] {
+                color: #FFFFFF;
+                background-color: #61C8C1;
+                border: 3px solid #61C8C1;
+                &+button {
+                    border-left: 3px solid #61C8C1;
+                }
+                &:last-child {
+                    border-right: 3px solid #61C8C1;
+                }
+            }
             &:first-child {
                 transform: skew(0deg, 0deg);
                 border-right: 0px solid #6D7383;
-                padding-right: 20px;
-                &>a>div {
+                padding-right: 40px;
+                &>div {
                     transform: skew(0deg, 0deg);
                 }
             }
@@ -1024,10 +1034,6 @@
             }
             &:last-child {
                 border-right: 3px solid #6D7383;
-            }
-            &>a>div {
-                transform: skew(-25deg, 0deg);
-                padding: 20px;
             }
         }
     }

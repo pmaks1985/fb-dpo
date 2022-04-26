@@ -168,97 +168,127 @@
       <div class="container-xl px-0 pt-4">
         <h1>Бонусная программа</h1>
         <div class="collapseBonusProgram d-flex">
-          <div>
-            <a
-              class=""
-              data-toggle="collapse"
-              href="#collapseBonusProgram1"
-              role="button"
-              aria-expanded="true"
-              aria-controls="collapseBonusProgram1"
-            >
-              <div>О программе</div>
+          <button
+            class=""
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseBonusProgram1"
+            aria-expanded="true"
+            aria-controls="collapseBonusProgram1"
+          >
+            <div>О программе</div>
+          </button>
+
+          <button
+            class=""
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseBonusProgram2"
+            aria-expanded="false"
+            aria-controls="collapseBonusProgram2"
+          >
+            <div>Как накопить баллы?</div>
+          </button>
+          <button
+            class=""
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseBonusProgram3"
+            aria-expanded="false"
+            aria-controls="collapseBonusProgram3"
+          >
+            <div>Как потратить баллы?</div>
+          </button>
+          <button
+            class=""
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseBonusProgram4"
+            aria-expanded="false"
+            aria-controls="collapseBonusProgram4"
+          >
+            <div>Вопросы и ответы</div>
+          </button>
+        </div>
+
+        <div id="description" data-default="1">
+          <div
+            class="collapse show"
+            id="collapseBonusProgram1"
+            data-parent="#description"
+          >
+            <div>
+              <h2>О программе</h2>
+            </div>
+          </div>
+          <div
+            class="collapse"
+            id="collapseBonusProgram2"
+            data-parent="#description"
+          >
+            <div>
+              <h2>Как накопить баллы?</h2>
+            </div>
+          </div>
+          <div
+            class="collapse"
+            id="collapseBonusProgram3"
+            data-parent="#description"
+          >
+            <div>
+              <h2>Как потратить баллы?</h2>
+            </div>
+          </div>
+          <div
+            class="collapse"
+            id="collapseBonusProgram4"
+            data-parent="#description"
+          >
+            <div>
+              <h2>Вопросы и ответы</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-xl">
+        <div class="row pt-5 pb-2">
+          <div class="col-3 p-0">
+            <a href="/">
+              <div class="logo d-flex">
+                <div class="logo_img"></div>
+                <div class="logo_text">
+                  <div class="pt-3 pb-2">Фактор Безопасности</div>
+                  <div>Учебный центр</div>
+                </div>
+              </div>
             </a>
                         </div>
-                        <div>
-                            <a class="" data-toggle="collapse" href="#collapseBonusProgram2" role="button" aria-expanded="false" aria-controls="collapseBonusProgram2">
-                                <div>Как накопить баллы?</div>
-                            </a>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBonusProgram3" aria-expanded="false" aria-controls="collapseBonusProgram3">
-              <div>Как потратить баллы?</div>
-            </button>
-                        </div>
-                        <div>
-                            <a class="" data-toggle="collapse" href="#collapseBonusProgram4" role="button" aria-expanded="false" aria-controls="collapseBonusProgram4">
-                                <div>Вопросы и ответы</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="description" data-default="1">
-                        <div class="collapse show" id="collapseBonusProgram1" data-parent="#description">
-                            <div>
-                                <h2>О программе</h2>
-                            </div>
-                        </div>
-                        <div class="collapse" id="collapseBonusProgram2" data-parent="#description">
-                            <div>
-                                <h2>Как накопить баллы?</h2>
-                            </div>
-                        </div>
-                        <div class="collapse" id="collapseBonusProgram3" data-parent="#description">
-                            <div>
-                                <h2>Как потратить баллы?</h2>
-                            </div>
-                        </div>
-                        <div class="collapse" id="collapseBonusProgram4" data-parent="#description">
-                            <div>
-                                <h2>Вопросы и ответы</h2>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    <footer>
-                        <div class="container-xl">
-                            <div class="row pt-5 pb-2">
-                                <div class="col-3 p-0">
-                                    <a href="/">
-                                        <div class="logo d-flex">
-                                            <div class="logo_img"></div>
-                                            <div class="logo_text">
-                                                <div class="pt-3 pb-2">Фактор Безопасности</div>
-                                                <div>Учебный центр</div>
-                                            </div>
-                                        </div>
-                                    </a>
+                        <div class="col-4 mt-3 p-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="header-phone">
+                                    <a href="tel:+74932409454">+7 (4932) 40-94-54</a>
                                 </div>
-                                <div class="col-4 mt-3 p-0">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="header-phone">
-                                            <a href="tel:+74932409454">+7 (4932) 40-94-54</a>
-                                        </div>
-                                        <div class="header-time">Пн-Вс: 8-17 (Мск)</div>
-                                    </div>
-                                </div>
+                                <div class="header-time">Пн-Вс: 8-17 (Мск)</div>
                             </div>
-                            <div class="nav-footer">
-                                <nav class="navbar navbar-expand-lg p-0">
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFooter" aria-controls="navbarFooter" aria-expanded="false" aria-label="Переключатель навигации">
+                        </div>
+                    </div>
+                    <div class="nav-footer">
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFooter" aria-controls="navbarFooter" aria-expanded="false" aria-label="Переключатель навигации">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-                                    <div class="collapse navbar-collapse justify-content-between d-flex" id="navbarFooter">
-                                        <ul class="navbar-nav justify-content-between col-10">
-                                            <li class="nav-item dropdown d-flex align-items-center">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="collapse navbar-collapse justify-content-between d-flex" id="navbarFooter">
+                                <ul class="navbar-nav justify-content-between col-10">
+                                    <li class="nav-item dropdown d-flex align-items-center">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Об учебном центре
                   </a>
-                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-circle" aria-hidden="true"></i>О нас</a
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#"><i class="fa fa-circle" aria-hidden="true"></i>О нас</a
                     >
 
                     <a class="dropdown-item" href="#"
@@ -304,8 +334,8 @@
                   >
                     Направления обучения
                   </a>
-                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <a class="dropdown-item" href="#"><i class="fa fa-circle" aria-hidden="true"></i
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-circle" aria-hidden="true"></i
                       >Пожарно-технический минимум</a
                     >
                     <a class="dropdown-item" href="#"
@@ -326,24 +356,24 @@
 
                 <li class="nav-item">
                   <a class="nav-link" href="#">Цены</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#"> Доставка</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Оплата</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Контакты</a>
-                                            </li>
-                                        </ul>
-                                        </div>
-                                </nav>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Доставка</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Оплата</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
                                 </div>
-                                <div class="list-in-footer pt-4">
-                                    <ul class="pl-1">
-                                        <li>
-                                            <a href="http://">Лицензия на ведение образовательной деятельности №2051 от
+                        </nav>
+                        </div>
+                        <div class="list-in-footer pt-4">
+                            <ul class="pl-1">
+                                <li>
+                                    <a href="http://">Лицензия на ведение образовательной деятельности №2051 от
                 28.02.2018 г.</a
               >
             </li>
@@ -355,42 +385,42 @@
             </li>
             <li>
               <a href="http://">Политика конфиденциальности</a>
-                                        </li>
-                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nord-soft d-flex flex-column align-items-end pb-3">
+                            <div>
+                                <div>©Все права защищены, 2022</div>
+                                <div class="nord-soft_logo">
+                                    <a class="text-decoration-none" href="https://nordsoftware.ru/">
+                                        <span class="pr-2">Создание сайта</span>
+                                        <img src="/layout/img/nord-soft.png" loading="lazy" alt="nord-soft" />
+                                    </a>
                                 </div>
-                                <div class="nord-soft d-flex flex-column align-items-end pb-3">
-                                    <div>
-                                        <div>©Все права защищены, 2022</div>
-                                        <div class="nord-soft_logo">
-                                            <a class="text-decoration-none" href="https://nordsoftware.ru/">
-                                                <span class="pr-2">Создание сайта</span>
-                                                <img src="/layout/img/nord-soft.png" loading="lazy" alt="nord-soft" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                    </footer>
+                            </div>
+                        </div>
+                        </div>
+                        </footer>
 
-                    <script src="/layout/js/jquery-3.5.1.min.js"></script>
-                    <script src="/layout/js/popper.min.js"></script>
-                    <script src="/layout/js/bootstrap.min.js"></script>
-                    <script>
-                        $(document).ready(function() {
-                            $(".magic-link").click(function() {
-                                $(".nav-search").toggleClass("d-flex").toggleClass("d-none");
-                                $(".magic-input").focus();
-                                $(".search").toggleClass("d-flex").toggleClass("d-none");
+                        <script src="/layout/js/jquery-3.5.1.min.js"></script>
+                        <script src="/layout/js/popper.min.js"></script>
+                        <script src="/layout/js/bootstrap.min.js"></script>
+                        <script>
+                            $(document).ready(function() {
+                                $(".magic-link").click(function() {
+                                    $(".nav-search").toggleClass("d-flex").toggleClass("d-none");
+                                    $(".magic-input").focus();
+                                    $(".search").toggleClass("d-flex").toggleClass("d-none");
+                                });
+                                $(document).mouseup(function(e) {
+                                    var container = $(".nav-search");
+                                    if (container.has(e.target).length === 0) {
+                                        container.addClass("d-none").removeClass("d-flex");
+                                        $(".search").addClass("d-flex").removeClass("d-none");
+                                    }
+                                });
                             });
-                            $(document).mouseup(function(e) {
-                                var container = $(".nav-search");
-                                if (container.has(e.target).length === 0) {
-                                    container.addClass("d-none").removeClass("d-flex");
-                                    $(".search").addClass("d-flex").removeClass("d-none");
-                                }
-                            });
-                        });
-                    </script>
+                        </script>
 </body>
 
 </html>
