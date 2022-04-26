@@ -63,6 +63,16 @@
         padding-bottom: 45px;
     }
     
+    h4,
+    .h4 {
+        font-family: 'NotoSans-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 160%;
+        padding-bottom: 40px;
+    }
+    
     a {
         color: #61C8C1;
     }
@@ -1036,5 +1046,38 @@
             &:last-child {
                 border-right: 3px solid #6D7383;
             }
+        }
+    }
+    
+    .block {
+        font-family: 'NotoSans-Bold';
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        &+i.fa {
+            padding-top: 100px;
+        }
+    }
+    
+    .tag {
+        font-size: 30px;
+        line-height: 41px;
+        padding-bottom: 25px;
+    }
+    
+    .img {
+        height: 95px;
+    }
+    
+    .text {
+        font-size: 24px;
+        line-height: 120%;
+        padding: 25px 0;
+        &2 {
+            font-family: 'NotoSans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
         }
     }
