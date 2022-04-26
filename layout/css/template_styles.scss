@@ -983,7 +983,8 @@
     /*bonus-program*/
     
     #description {
-        & h2 {
+        & h2,
+        & .h2 {
             color: #AAB4B3;
         }
     }
