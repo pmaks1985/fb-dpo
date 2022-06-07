@@ -1,0 +1,37 @@
+#accordionSections {
+    padding-bottom: 100px;
+}
+
+#accordionSections .btnSections {
+    font-family: 'NotoSans-Bold';
+    font-weight: 700;
+    padding: 20px;
+    border-top: 1px solid #aab4b3;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 28px;
+}
+
+#accordionSections .btnSections[aria-expanded=false]>.opener::after {
+    content: '\23F5';
+}
+
+#accordionSections .btnSections[aria-expanded=true]>.opener::after {
+    content: '\23F7';
+}
+
+#accordionSections .btnSections:last-of-type {
+    border-bottom: 1px solid #aab4b3;
+}
+
+#accordionSections .btnSections[aria-expanded=true]:last-of-type {
+    border-bottom: none;
+}
+
+#accordionSections>.collapse {
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 10px;
+}

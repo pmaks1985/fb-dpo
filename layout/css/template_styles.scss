@@ -1018,6 +1018,9 @@
             background-color: white;
             color: #929F9F;
             padding: 15px 20px;
+            &:focus {
+                outline: 0px;
+            }
             &>div {
                 transform: skew(-25deg, 0deg);
             }

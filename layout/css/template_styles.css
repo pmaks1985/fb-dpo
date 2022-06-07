@@ -1127,6 +1127,10 @@ footer {
   padding: 15px 20px;
 }
 
+.collapseBonusProgram button:focus {
+  outline: 0px;
+}
+
 .collapseBonusProgram button > div {
   -webkit-transform: skew(-25deg, 0deg);
           transform: skew(-25deg, 0deg);

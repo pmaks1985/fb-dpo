@@ -1,0 +1,22 @@
+.slider {
+    font-size: 18px;
+    line-height: 110%;
+}
+
+.slider .image-link {
+    padding-right: 15px;
+    color: #000000;
+    text-align: center;
+}
+
+.slider .image {
+    max-width: 200px;
+    height: 260px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.slider .image-link>div {
+    max-width: 250px;
+}
