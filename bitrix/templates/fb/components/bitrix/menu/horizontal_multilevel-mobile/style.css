@@ -1,0 +1,7 @@
+@media (max-width: 767.98px) {
+    .mobile {
+        position: absolute;
+        top: 65px;
+        left: 25px;
+    }
+}

@@ -123,6 +123,7 @@ $today = date("Y");
 
 <? if ($arResult["DISPLAY_PROPERTIES"]["STUDY_PROGRAMS_TITLE"]["DISPLAY_VALUE"]) : ?>
 <h2>
+    <a name="prog"></a>
     <?= $arResult["DISPLAY_PROPERTIES"]["STUDY_PROGRAMS_TITLE"]["DISPLAY_VALUE"] ?>, доступные на <?= $today; ?> год
 </h2>
 <? endif; ?>

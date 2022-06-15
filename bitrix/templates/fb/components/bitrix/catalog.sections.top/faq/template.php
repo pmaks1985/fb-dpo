@@ -15,11 +15,13 @@ $this->setFrameMode(true);
 <?
 $i = 1;
 $j = 1;
+$SECTION = $_REQUEST['SECTION'];
+$ELEMENT = $_REQUEST['ELEMENT'];
 ?>
 <div class="accordion" id="accordionSections">
     <? foreach ($arResult["SECTIONS"] as $arSection) : ?>
-    <button class="btn btn-block text-left rounded-0 btnSections" type="button" data-toggle="collapse"
-        data-target="#collapse<?= $arSection["ID"] ?>" aria-expanded="false"
+    <button id="<?= $arSection["ID"] ?>" class="btn btn-block text-left rounded-0 btnSections" type="button"
+        data-toggle="collapse" data-target="#collapse<?= $arSection["ID"] ?>" aria-expanded="false"
         aria-controls="collapse<?= $arSection["ID"] ?>"><span class="opener"></span> <?= $i; ?>.
         <?= $arSection["NAME"] ?>
     </button>
@@ -29,14 +31,15 @@ $j = 1;
 
             <? foreach ($arSection["ITEMS"] as $arElement) : ?>
             <?
-					$this->AddEditAction($arElement['ID'], $arElement['EDIT_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_EDIT"));
-					$this->AddDeleteAction($arElement['ID'], $arElement['DELETE_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BCST_ELEMENT_DELETE_CONFIRM')));
-					?>
+                    $this->AddEditAction($arElement['ID'], $arElement['EDIT_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_EDIT"));
+                    $this->AddDeleteAction($arElement['ID'], $arElement['DELETE_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BCST_ELEMENT_DELETE_CONFIRM')));
+                    ?>
 
             <div class="mb-4">
                 <div id="heading<?= $this->GetEditAreaId($arElement['ID']); ?>">
-                    <button class="btn w-100 text-left" type="button" data-toggle="collapse"
-                        data-target="#collapse<?= $this->GetEditAreaId($arElement['ID']); ?>" aria-expanded="true"
+                    <button id="<?= $arElement['ID']; ?>" class="btn w-100 text-left" type="button"
+                        data-toggle="collapse" data-target="#collapse<?= $this->GetEditAreaId($arElement['ID']); ?>"
+                        aria-expanded="true"
                         aria-controls="collapse<?= $this->GetEditAreaId($arElement['ID']); ?>"><?= $i; ?>.<?= $j; ?>
                         <? echo $arElement["NAME"] ?>
                     </button>
@@ -52,6 +55,16 @@ $j = 1;
         </div>
     </div>
     <? $i++;
-		$j = 1; ?>
+        $j = 1; ?>
     <? endforeach; ?>
 </div>
+
+<script>
+$(function() {
+    $("#<?= $SECTION; ?>").click();
+    $("#<?= $ELEMENT; ?>").click();
+    $("html,body").animate({
+        scrollTop: $("#<?= $ELEMENT; ?>").offset().top - 250
+    }, 1000);
+});
+</script>
