@@ -39,12 +39,33 @@
         <header>
             <div class="container-xl">
                 <div class="row pt-lg-5 pt-3">
-                    <div class="col-lg-3 col-12 p-0">
+                    <div class="col-lg-3 col-12 p-0 d-flex d-lg-block align-items-center">
+                        <div class="d-block d-lg-none mobile pl-3 pl-lg-0">
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:menu",
+                                "horizontal_multilevel-mobile",
+                                array(
+                                    "ALLOW_MULTI_SELECT" => "N",    // Разрешить несколько активных пунктов одновременно
+                                    "CHILD_MENU_TYPE" => "topfirst",    // Тип меню для остальных уровней
+                                    "DELAY" => "N",    // Откладывать выполнение шаблона меню
+                                    "MAX_LEVEL" => "2",    // Уровень вложенности меню
+                                    "MENU_CACHE_GET_VARS" => "",    // Значимые переменные запроса
+                                    "MENU_CACHE_TIME" => "3600",    // Время кеширования (сек.)
+                                    "MENU_CACHE_TYPE" => "N",    // Тип кеширования
+                                    "MENU_CACHE_USE_GROUPS" => "Y",    // Учитывать права доступа
+                                    "ROOT_MENU_TYPE" => "top",    // Тип меню для первого уровня
+                                    "USE_EXT" => "Y",    // Подключать файлы с именами вида .тип_меню.menu_ext.php
+                                    "COMPONENT_TEMPLATE" => "horizontal_multilevel",
+                                    "MENU_THEME" => "site"
+                                ),
+                                false
+                            ); ?>
+                        </div>
                         <a href="/">
-                            <div class="logo d-flex justify-content-end justify-content-lg-start">
+                            <div class="logo d-flex justify-content-lg-start justify-content-center pl-4 pl-lg-0">
                                 <div class="logo_img"></div>
                                 <div class="logo_text pr-3 pr-lg-0">
-                                    <div class="pt-3 pb-2">Фактор Безопасности</div>
+                                    <div class="pt-lg-3 pt-2 pb-lg-2 pb-0">Фактор Безопасности</div>
                                     <div>Учебный центр</div>
                                 </div>
                             </div>
@@ -109,29 +130,6 @@
                 ),
                 false
             ); ?>
-
-
-            <div class="d-block d-lg-none mobile">
-                <? $APPLICATION->IncludeComponent(
-                    "bitrix:menu",
-                    "horizontal_multilevel-mobile",
-                    array(
-                        "ALLOW_MULTI_SELECT" => "N",    // Разрешить несколько активных пунктов одновременно
-                        "CHILD_MENU_TYPE" => "topfirst",    // Тип меню для остальных уровней
-                        "DELAY" => "N",    // Откладывать выполнение шаблона меню
-                        "MAX_LEVEL" => "2",    // Уровень вложенности меню
-                        "MENU_CACHE_GET_VARS" => "",    // Значимые переменные запроса
-                        "MENU_CACHE_TIME" => "3600",    // Время кеширования (сек.)
-                        "MENU_CACHE_TYPE" => "N",    // Тип кеширования
-                        "MENU_CACHE_USE_GROUPS" => "Y",    // Учитывать права доступа
-                        "ROOT_MENU_TYPE" => "top",    // Тип меню для первого уровня
-                        "USE_EXT" => "Y",    // Подключать файлы с именами вида .тип_меню.menu_ext.php
-                        "COMPONENT_TEMPLATE" => "horizontal_multilevel",
-                        "MENU_THEME" => "site"
-                    ),
-                    false
-                ); ?>
-            </div>
 
             <div class="d-none">
                 <? $APPLICATION->IncludeComponent(

@@ -22,14 +22,14 @@ $APPLICATION->SetTitle("H1");
     </div>
 </div>
 </div>
-<div class="container-xl px-0">
+<div class="container-xl px-3 px-lg-0">
     <div class="educational-center pt-5">
         <div class="educational-center_title pb-5">
             <? $APPLICATION->IncludeFile('/include/fb/general/uchebnyy-tsentr-provodit.php'); ?>
         </div>
         <div class="educational-center_link d-flex">
             <a class="text-center" href="">Образовательная лицензия</a>
-            <a class="text-center mx-4" class="mx-4" href="">Проверка в Реестре МИНТРУДА</a>
+            <a class="text-center mx-0 mx-lg-4" class="mx-4" href="">Проверка в Реестре МИНТРУДА</a>
             <a class="text-center" href="">Проверка лицензии в РОСОБРНАДЗОРЕ</a>
         </div>
     </div>
@@ -106,9 +106,9 @@ $APPLICATION->SetTitle("H1");
 
     </div>
 
-    <div class="d-flex offer-calculator justify-content-between">
-        <div class="d-flex">
-            <div class="offer-calculator_calc mr-4"></div>
+    <div class="d-flex flex-column flex-lg-row offer-calculator justify-content-between">
+        <div class="d-flex pb-4 pb-lg-0">
+            <div class="offer-calculator_calc mr-2 mr-lg-4"></div>
             <div class="d-flex flex-column justify-content-between">
                 <div class="offer-calculator_calc__title">
                     <a href="">Калькулятор скидок</a>
@@ -117,7 +117,7 @@ $APPLICATION->SetTitle("H1");
             </div>
         </div>
         <div class="d-flex">
-            <div class="offer-calculator_letter mr-4"></div>
+            <div class="offer-calculator_letter mr-2 mr-lg-4"></div>
             <div class="d-flex flex-column justify-content-between">
                 <div class="offer-calculator_calc__title">
                     <a href="">Коммерческое предложение</a>
@@ -134,8 +134,8 @@ $APPLICATION->SetTitle("H1");
     </a>
 
     <h2>Оплата</h2>
-    <div class="d-flex justify-content-between payment">
-        <a href="/payment/#bank-card">
+    <div class="d-flex justify-content-between payment flex-column flex-lg-row">
+        <a href="/payment/#bank-card" class="pb-3 pb-lg-0">
             <div class="text-center">
                 <div class="payment_title">Банковская карта</div>
                 <div class="text-black">Для физических лиц без комиссии</div>

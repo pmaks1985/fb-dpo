@@ -1277,12 +1277,17 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+    body {
+        font-size: 18px;
+    }
+    /*header-footer*/
     .sticky {
         position: static;
     }
     .logo {
         &_text {
             font-size: 12px;
+            line-height: 150%;
             &>div:first-child {
                 font-size: 18px;
             }
@@ -1327,5 +1332,162 @@ footer {
     }
     .nord-soft {
         font-size: 16px;
+    }
+    /*general*/
+    .general {
+        padding: 20px 10px;
+        &-title {
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+        &-description {
+            display: none;
+        }
+        &-img {
+            background-size: cover;
+            min-height: 250px;
+            max-width: 720px;
+        }
+        &-link {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            &>a {
+                padding: 20px 30px;
+                margin-bottom: 15px;
+                text-align: center;
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .educational-center {
+        padding-bottom: 50px;
+        &_title {
+            font-size: 20px;
+            padding: 0;
+        }
+        &_link {
+            font-size: 20px;
+            flex-direction: column;
+            &>a {
+                padding: 25px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    h2 {
+        font-size: 26px;
+        padding-bottom: 30px;
+    }
+    .directions-of-study {
+        padding-bottom: 30px;
+        &_link {
+            font-size: 20px;
+            & div {
+                padding: 25px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .offer-calculator {
+        padding-bottom: 30px;
+        font-size: 20px;
+        line-height: 140%;
+        &_calc {
+            min-height: 50px;
+            min-width: 45px;
+            &__title {
+                font-size: 20px;
+                line-height: 125%;
+            }
+        }
+        &_letter {
+            min-height: 50px;
+            min-width: 45px;
+        }
+    }
+    .steps {
+        padding-bottom: 30px;
+    }
+    .step {
+        &_text {
+            font-size: 20px;
+        }
+    }
+    .fa-chevron-down {
+        font-size: 22px !important;
+    }
+    .application-for-training {
+        padding: 20px 30px;
+        font-size: 16px;
+        min-width: auto;
+        margin-bottom: 50px;
+    }
+    .payment {
+        padding-bottom: 50px;
+        &_title {
+            font-size: 20px;
+            padding-bottom: 5px;
+        }
+        & .text-center {
+            padding: 10px;
+        }
+    }
+    .calc-delivery {
+        font-size: 20px;
+        line-height: 120%;
+        padding: 20px;
+        margin-bottom: 50px;
+        &>img {
+            max-width: 40px;
+            margin-left: 10px;
+        }
+    }
+    .advantages {
+        margin-bottom: 50px;
+        &_text {
+            font-size: 20px;
+        }
+        &1,
+        &2,
+        &3,
+        &4,
+        &5,
+        &6,
+        &7,
+        &8 {
+            min-width: 45px;
+        }
+        & .d-flex {
+            min-height: 70px;
+        }
+    }
+    .accordion {
+        & button {
+            font-size: 20px;
+            padding: 15px;
+        }
+        & .collapse {
+            font-size: 18px;
+            padding: 20px;
+        }
+    }
+    .answers {
+        font-size: 20px;
+    }
+    .any-questions {
+        padding-top: 50px;
+        max-width: 100%;
+        &>div {
+            padding-bottom: 20px;
+        }
+        &_title {
+            font-size: 24px;
+        }
+        &>.font-weight-bold {
+            font-size: 24px;
+        }
     }
 }

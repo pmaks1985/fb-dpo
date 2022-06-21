@@ -1257,11 +1257,16 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+  body {
+    font-size: 18px;
+  }
+  /*header-footer*/
   .sticky {
     position: static;
   }
   .logo_text {
     font-size: 12px;
+    line-height: 150%;
   }
   .logo_text > div:first-child {
     font-size: 18px;
@@ -1302,5 +1307,159 @@ footer {
   }
   .nord-soft {
     font-size: 16px;
+  }
+  /*general*/
+  .general {
+    padding: 20px 10px;
+  }
+  .general-title {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  .general-description {
+    display: none;
+  }
+  .general-img {
+    background-size: cover;
+    min-height: 250px;
+    max-width: 720px;
+  }
+  .general-link {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .general-link > a {
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .general-link > a:first-child {
+    margin-right: 0;
+  }
+  .educational-center {
+    padding-bottom: 50px;
+  }
+  .educational-center_title {
+    font-size: 20px;
+    padding: 0;
+  }
+  .educational-center_link {
+    font-size: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .educational-center_link > a {
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .directions-of-study {
+    padding-bottom: 30px;
+  }
+  .directions-of-study_link {
+    font-size: 20px;
+  }
+  .directions-of-study_link div {
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+  .offer-calculator {
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .offer-calculator_calc {
+    min-height: 50px;
+    min-width: 45px;
+  }
+  .offer-calculator_calc__title {
+    font-size: 20px;
+    line-height: 125%;
+  }
+  .offer-calculator_letter {
+    min-height: 50px;
+    min-width: 45px;
+  }
+  .steps {
+    padding-bottom: 30px;
+  }
+  .step_text {
+    font-size: 20px;
+  }
+  .fa-chevron-down {
+    font-size: 22px !important;
+  }
+  .application-for-training {
+    padding: 20px 30px;
+    font-size: 16px;
+    min-width: auto;
+    margin-bottom: 50px;
+  }
+  .payment {
+    padding-bottom: 50px;
+  }
+  .payment_title {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  .payment .text-center {
+    padding: 10px;
+  }
+  .calc-delivery {
+    font-size: 20px;
+    line-height: 120%;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .calc-delivery > img {
+    max-width: 40px;
+    margin-left: 10px;
+  }
+  .advantages {
+    margin-bottom: 50px;
+  }
+  .advantages_text {
+    font-size: 20px;
+  }
+  .advantages1, .advantages2, .advantages3, .advantages4, .advantages5, .advantages6, .advantages7, .advantages8 {
+    min-width: 45px;
+  }
+  .advantages .d-flex {
+    min-height: 70px;
+  }
+  .accordion button {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .accordion .collapse {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .answers {
+    font-size: 20px;
+  }
+  .any-questions {
+    padding-top: 50px;
+    max-width: 100%;
+  }
+  .any-questions > div {
+    padding-bottom: 20px;
+  }
+  .any-questions_title {
+    font-size: 24px;
+  }
+  .any-questions > .font-weight-bold {
+    font-size: 24px;
   }
 }
