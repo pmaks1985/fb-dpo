@@ -15,8 +15,8 @@ $today = date("Y");
 ?>
 
 <div class="row cost-of-education_block mx-0">
-    <div class="d-flex flex-column col-6 justify-content-between px-0">
-        <div class="d-flex justify-content-between">
+    <div class="d-flex flex-column col-12 col-lg-6 justify-content-between px-0">
+        <div class="d-flex justify-content-between flex-column flex-lg-row text-center text-lg-left pb-4 pb-lg-0">
             <div class="cost-of-education font-weight-bold">
                 Стоимость обучения
             </div>
@@ -30,18 +30,18 @@ $today = date("Y");
             </div>
         </div>
         <div class="d-flex">
-            <div class="offer-calculator_calc areas-of-study_calc mr-4"></div>
+            <div class="offer-calculator_calc areas-of-study_calc mr-2 mr-lg-4"></div>
             <div>Калькулятор скидок</div>
         </div>
-        <div class="d-flex">
-            <div class="offer-calculator_letter areas-of-study_letter mr-4"></div>
+        <div class="d-flex py-4 py-lg-0">
+            <div class="offer-calculator_letter areas-of-study_letter mr-2 mr-lg-4"></div>
             <div>
                 Коммерческое предложение <a href="">получить на email</a>
             </div>
         </div>
     </div>
-    <div class="col-6 d-flex flex-column justify-content-between">
-        <div class="pl-4">
+    <div class="col-12 col-lg-6 d-flex flex-column justify-content-between">
+        <div class="pl-0 pl-lg-4 text-center text-lg-left mb-5 mb-lg-0">
             <? if ($arResult["DISPLAY_PROPERTIES"]["PRICE_5"]["DISPLAY_VALUE"]) : ?>
             <div class="dropdown">
                 <a class="dropdown-toggle text-black font-weight-bold" href="#" role="button" id="dropdownMenuLink"
@@ -52,7 +52,7 @@ $today = date("Y");
                 <div class="dropdown-menu special-prices_menu" aria-labelledby="dropdownMenuLink">
                     <div class="dropdown-item text-decoration-none special-prices">
                         <span class="font-weight-bold text-light-green">Специальные цены при коллективной заявке!</span>
-                        <ul class="pl-4">
+                        <ul class="pl-lg-4 pl-3">
                             <li>
                                 <? if ($arResult["DISPLAY_PROPERTIES"]["PRICE_5"]["DISPLAY_VALUE"]) : ?>
                                 <div>
@@ -106,12 +106,12 @@ $today = date("Y");
         </div>
     </div>
 </div>
-<div class="bg-light-green d-flex delivery-payment justify-content-between">
-    <div class="d-flex align-items-center">
+<div class="d-flex delivery-payment justify-content-between flex-column flex-lg-row">
+    <div class="bg-light-green d-flex align-items-center p-3 mb-4 mb-lg-0">
         <div class="delivery-payment_img1"></div>
         <a href="/delivery/">ДОСТАВКА ДОКУМЕНТОВ</a>
     </div>
-    <div class="d-flex align-items-center">
+    <div class="bg-light-green d-flex align-items-center p-4">
         <div class="delivery-payment_img2"></div>
         <a href="/payment/">СПОСОБЫ ОПЛАТЫ</a>
     </div>
@@ -133,9 +133,9 @@ $today = date("Y");
     <?= $arResult["DISPLAY_PROPERTIES"]["FROM_WHOM_1"]["DISPLAY_VALUE"] ?>
 </div>
 
-<table class="table table-sm mb-5">
+<table id="table-check1" class="table table-sm mb-5">
     <thead>
-        <tr>
+        <tr id="th1">
             <th>Код программы</th>
             <th>Наименование программы</th>
             <th>Часы</th>
@@ -172,9 +172,9 @@ $today = date("Y");
 <div class="font-weight-bold pb-4">
     <?= $arResult["DISPLAY_PROPERTIES"]["FROM_WHOM_2"]["DISPLAY_VALUE"] ?>
 </div>
-<table class="table table-sm mb-5">
+<table id="table-check2" class="table table-sm mb-5">
     <thead>
-        <tr>
+        <tr id="th2">
             <th>Код программы</th>
             <th>Наименование программы</th>
             <th>Часы</th>
@@ -222,7 +222,7 @@ $today = date("Y");
 </div>
 
 <? if ($arResult["DISPLAY_PROPERTIES"]["CERTIFICATE_PERIODICITY"]["DISPLAY_VALUE"]) : ?>
-<div class="w-75 mx-auto text-center mb-6">
+<div id="w-100" class="w-75 mx-auto text-center mb-6">
     <?= $arResult["DISPLAY_PROPERTIES"]["CERTIFICATE_PERIODICITY"]["DISPLAY_VALUE"]; ?>
 </div>
 <? endif; ?>
@@ -244,7 +244,7 @@ $today = date("Y");
 </div>
 <? endif; ?>
 <? if ($arResult["DISPLAY_PROPERTIES"]["DIPLOMA_PERIODICITY"]["DISPLAY_VALUE"]) : ?>
-<div class="w-75 mx-auto text-center mb-6">
+<div id="w-100" class="w-75 mx-auto text-center mb-6">
     <?= $arResult["DISPLAY_PROPERTIES"]["DIPLOMA_PERIODICITY"]["DISPLAY_VALUE"]; ?>
 </div>
 <? endif; ?>

@@ -1377,9 +1377,24 @@ footer {
             }
         }
     }
-    h2 {
+    h1 {
+        font-size: 28px;
+    }
+    h2,
+    .h2 {
         font-size: 26px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
+    }
+    h3,
+    .h3 {
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+    .mb-6 {
+        margin-bottom: 50px;
+    }
+    ul {
+        padding-left: 25px;
     }
     .directions-of-study {
         padding-bottom: 30px;
@@ -1488,6 +1503,123 @@ footer {
         }
         &>.font-weight-bold {
             font-size: 24px;
+        }
+    }
+    /*areas-of-study*/
+    .cost-of-education {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+    .price {
+        font-size: 26px;
+    }
+    .areas-of-study_submit {
+        & .application-for-training {
+            padding: 20px 30px;
+        }
+    }
+    .dropdown {
+        &>.fa-chevron-down {
+            font-size: 16px !important;
+        }
+    }
+    #dropdownMenuLink {
+        border-bottom: 3px solid #61C8C1;
+    }
+    .special-prices {
+        & span {
+            font-size: 18px;
+            line-height: 130%;
+        }
+    }
+    .dropdown-menu {
+        padding: 10px 0 5px;
+        &>.dropdown-item {
+            line-height: 160%;
+            padding: 0 15px;
+        }
+    }
+    .delivery-payment {
+        padding: 0;
+        font-size: 20px;
+        margin: 30px 0 50px;
+    }
+    #w-100 {
+        width: 100% !important;
+    }
+    #table-check1 tr td,
+    #table-check2 tr td {
+        display: block;
+    }
+    /*#table-check1 tr td:nth-child(1),
+    #table-check1 tr td:nth-child(3),
+    #table-check1 tr td:nth-child(4),
+    #table-check2 tr td:nth-child(1),
+    #table-check2 tr td:nth-child(3),
+    #table-check2 tr td:nth-child(4) {
+        display: none;
+    }*/
+    #table-check1 tr td:nth-child(3),
+    #table-check1 tr td:nth-child(4),
+    #table-check1 tr td:nth-child(5),
+    #table-check1 tr td:nth-child(6),
+    #table-check2 tr td:nth-child(3),
+    #table-check2 tr td:nth-child(4),
+    #table-check2 tr td:nth-child(5),
+    #table-check2 tr td:nth-child(6) {
+        text-align: center;
+    }
+    #th1,
+    #th2 {
+        display: none;
+    }
+    .table tbody td {
+        padding: 15px;
+    }
+    .collapse {
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+    }
+    .deliveryСard {
+        padding: 20px;
+        &_title {
+            display: none;
+        }
+        &_imgPost {
+            margin-bottom: 25px;
+        }
+        &_imgExpress {
+            margin-bottom: 25px;
+        }
+    }
+    .delivery {
+        padding-bottom: 50px;
+    }
+    .shippingTable_head {
+        font-size: 18px;
+    }
+    .shippingTable_body {
+        font-size: 18px;
+        &>.d-flex>div:first-child {
+            min-width: 170px;
+        }
+        &>.d-flex>div:nth-child(2) {
+            min-width: 130px;
+        }
+    }
+    .explanation {
+        padding-bottom: 50px;
+    }
+    .payment-methods {
+        padding-bottom: 50px;
+        &>a>.text-center {
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        &_card {
+            padding-bottom: 0;
+            font-size: 26px;
         }
     }
 }

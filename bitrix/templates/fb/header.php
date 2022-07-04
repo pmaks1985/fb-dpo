@@ -193,7 +193,7 @@
         <? if ($APPLICATION->GetCurDir() == '/') : ?>
         <div class="general-img mx-auto">
             <? else : ?>
-            <div class="container-xl px-0 pt-4">
+            <div class="container-xl pt-4  px-3 px-lg-0">
                 <? $APPLICATION->IncludeComponent(
                         "bitrix:breadcrumb",
                         "aos-breadcrumb",

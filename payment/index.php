@@ -4,7 +4,7 @@ $APPLICATION->SetTitle("Оплата обучения");
 ?>
 <h3>Доступные способы оплаты</h3>
 <a name="bank-card"></a>
-<div class="d-flex justify-content-between payment-methods">
+<div class="d-flex justify-content-between payment-methods flex-column flex-lg-row">
     <a href="#bank-card">
         <div class="text-center">
             <div class="payment-methods_card">Банковская карта</div>
