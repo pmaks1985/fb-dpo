@@ -51,10 +51,10 @@ $APPLICATION->SetTitle("Оплата обучения");
     <span class="font-weight-bold">Visa, MasterCard, Maestro, МИР.</span>
 </div>
 <div class="yandex-checkout row">
-    <div class="col-7 pt-3 pr-2 pl-3">
+    <div class="col-12 col-lg-7 pt-3 pr-2 pl-3 pb-3 pb-lg-0">
         <? $APPLICATION->IncludeFile('/include/fb/payment/bankovskoaya-karta/servis-yandeks-kassa.php'); ?>
     </div>
-    <div class="col-5 px-0">
+    <div class="col-12 col-lg-5 px-lg-0">
         <img src="/bitrix/templates/fb/img/yandex.png" alt="yandex" width="100%" height="auto" />
     </div>
 </div>

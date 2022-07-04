@@ -1362,6 +1362,7 @@ footer {
   }
   h1 {
     font-size: 28px;
+    padding-bottom: 35px;
   }
   h2,
   .h2 {
@@ -1517,14 +1518,6 @@ footer {
   #table-check2 tr td {
     display: block;
   }
-  /*#table-check1 tr td:nth-child(1),
-    #table-check1 tr td:nth-child(3),
-    #table-check1 tr td:nth-child(4),
-    #table-check2 tr td:nth-child(1),
-    #table-check2 tr td:nth-child(3),
-    #table-check2 tr td:nth-child(4) {
-        display: none;
-    }*/
   #table-check1 tr td:nth-child(3),
   #table-check1 tr td:nth-child(4),
   #table-check1 tr td:nth-child(5),
@@ -1587,5 +1580,30 @@ footer {
   .payment-methods_card {
     padding-bottom: 0;
     font-size: 26px;
+  }
+  .card-payment > div {
+    font-size: 20px;
+  }
+  .voz {
+    padding: 50px 0 0;
+  }
+  .voz_img {
+    min-width: 320px;
+    min-height: 370px;
+  }
+  .yandex-checkout {
+    padding-bottom: 50px;
+  }
+  .cashless-payment {
+    padding-bottom: 50px;
+  }
+  .cashless-payment_marg {
+    margin-bottom: 30px;
+  }
+  .attention {
+    margin-bottom: 35px;
+  }
+  .attention > span {
+    font-size: 20px;
   }
 }
