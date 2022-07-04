@@ -1642,4 +1642,34 @@ footer {
             font-size: 20px;
         }
     }
+    .contacts {
+        font-size: 20px;
+        &_name {
+            font-size: 24px;
+            margin-bottom: 20px;
+            & img {
+                width: 27px;
+            }
+        }
+    }
+    .img {
+        &_mail {
+            top: 5px !important;
+        }
+        &_phone {
+            top: -10px !important;
+        }
+    }
+    .requisites {
+        font-size: 16px;
+        &>div {
+            margin-bottom: 20px;
+        }
+        & .contacts_name {
+            font-size: 16px;
+            max-width: 120px;
+            margin-right: 0;
+            line-height: 110%;
+        }
+    }
 }
