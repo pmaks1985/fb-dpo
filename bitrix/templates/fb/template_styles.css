@@ -1374,6 +1374,11 @@ footer {
     font-size: 24px;
     padding-bottom: 25px;
   }
+  h4,
+  .h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
   .mb-6 {
     margin-bottom: 50px;
   }
@@ -1633,5 +1638,67 @@ footer {
     max-width: 120px;
     margin-right: 0;
     line-height: 110%;
+  }
+  .price-table_mobile span {
+    color: #AAB4B3;
+    font-family: 'NotoSans-Bold';
+    font-style: normal;
+    font-weight: 700;
+  }
+  .price-table_mobile p {
+    margin-bottom: 0;
+    text-align: center;
+    min-width: 55px;
+  }
+  .price-table_mobile__body > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-bottom: 2px solid #dee2e6;
+    padding: 10px;
+  }
+  .price-table_mobile__body > div:first-child {
+    background-color: #F2FAFC;
+  }
+  .collapseBonusProgram {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    border-bottom: 0px solid #61C8C1;
+  }
+  .collapseBonusProgram button {
+    -webkit-transform: none;
+            transform: none;
+    font-size: 18px !important;
+    border: 3px solid #929F9F;
+    border-bottom: none;
+    padding: 10px;
+  }
+  .collapseBonusProgram button:first-child {
+    padding-right: 0;
+    border-right: 3px solid #6D7383;
+  }
+  .collapseBonusProgram button:first-child[aria-expanded="true"] {
+    border-right: 3px solid #61C8C1;
+  }
+  .collapseBonusProgram button:last-child {
+    border-bottom: 3px solid #6D7383;
+  }
+  .collapseBonusProgram button:nth-child(2) {
+    margin-left: 0;
+  }
+  .collapseBonusProgram button > div {
+    -webkit-transform: none;
+            transform: none;
+    font-size: 18px !important;
+  }
+  .collapseBonusProgram button[aria-expanded="true"] + button {
+    border-left: 3px solid #6D7383;
+  }
+  .collapseBonusProgram button[aria-expanded="true"]:last-child {
+    border-bottom: 3px solid #61C8C1;
   }
 }

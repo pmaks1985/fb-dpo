@@ -13,13 +13,13 @@
 $this->setFrameMode(true);
 ?>
 <? $i = 0; ?>
-<div class="collapseBonusProgram d-flex">
+<div class="collapseBonusProgram d-flex flex-column flex-lg-row">
 
     <? foreach ($arResult["ITEMS"] as $arItem) : ?>
     <?
-		$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
-		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
-		?>
+        $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
+        $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
+        ?>
 
     <button class="" type="button" data-toggle="collapse" data-target="#collapseBonusProgram<?= $i; ?>"
         aria-expanded="false" aria-controls="collapseBonusProgram<?= $i; ?>">
